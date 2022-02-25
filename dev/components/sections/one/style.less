@@ -1,0 +1,119 @@
+.figure{
+    &__rectangle{
+        padding: 10px 60px;
+        border: 1px solid #FF0000;
+        border-radius: 5px;
+        max-width: 158px;
+        width: 100%;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 1.2;
+        color: #000000;
+    }
+    /* На мой личный взгляд, лучше флексов для выравнивания по центру ничего нет */
+    &__one{
+        background: #FFFFFF;
+        border: 1px solid #34A68A;
+        border-radius: 5px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100px;
+        max-width: 600px;
+        margin: 0px auto 16px auto;
+        position: relative;
+    }
+    /* Всегда так выравние псевдоэлементы */
+    &__two{
+        background: #FFFFFF;
+        border: 1px solid #34A68A;
+        border-radius: 5px;
+        width: 100%;
+        min-height: 100px;
+        max-width: 600px;
+        margin: 0px auto 16px auto;
+        position: relative;
+        & div{
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+    }
+    /* Гриды, находится на уровне с flex, очень крутая и удобная вещь */
+    &__three{
+        background: #FFFFFF;
+        border: 1px solid #34A68A;
+        border-radius: 5px;
+        width: 100%;
+        min-height: 100px;
+        max-width: 600px;
+        margin: 0px auto 16px auto;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+    /* Никогда так не делал, и думаю что способ очень не удобный. */
+    &__four{
+        background: #FFFFFF;
+        border: 1px solid #34A68A;
+        border-radius: 5px;
+        width: 100%;
+        min-height: 100px;
+        max-width: 600px;
+        margin: 0px auto 16px auto;
+        display: table;
+        & div{
+            display: table-cell;
+            vertical-align: middle;
+            border: none;
+            text-align: center;
+            & span{
+                padding: 10px 60px;
+                border: 1px solid #FF0000;
+                border-radius: 5px;
+                max-width: 158px;
+                width: 100%;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 1.2;
+                color: #000000;
+            }
+        }
+    }
+    /* Никогда так не делал, и думаю что способ очень не удобный. */
+    &__five{
+        background: #FFFFFF;
+        border: 1px solid #34A68A;
+        border-radius: 5px;
+        width: 100%;
+        min-height: 100px;
+        max-width: 600px;
+        margin: 0px auto 16px auto;
+        & div{
+            display: inline-block;
+            line-height: 100px;
+            text-align: center;
+            border: none;
+            width: 100%;
+            max-width: 100%;
+            & span{
+                padding: 10px 60px;
+                border: 1px solid #FF0000;
+                border-radius: 5px;
+                max-width: 158px;
+                width: 100%;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 1.2;
+                color: #000000;
+            }
+        }
+    } 
+ 
+}

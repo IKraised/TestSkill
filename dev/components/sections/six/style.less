@@ -1,0 +1,54 @@
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    &__bounce{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__start{
+        background: #0066FF;
+        border-radius: 20px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0.5px;
+        color: #FFFFFF;
+        padding: 8px 12px;
+        cursor: pointer;  
+        max-width: 200px;
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+    &__color{
+        background: #0066FF;
+        border-radius: 20px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0.5px;
+        color: #FFFFFF;
+        padding: 8px 12px;
+        cursor: pointer;  
+        max-width: 200px;
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
+.bounce{
+    &.animate{
+        animation: bounce 2s ease infinite;
+    }
+}
+@keyframes bounce{
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+}

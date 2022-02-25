@@ -1,0 +1,29 @@
+include components/global.pug
+include components/svg/index.pug
+include components/head/index.pug
+
+- 
+    pageSettings = {
+        title: 'Задание 2',
+        contacts: false
+    }
+
+
+<!DOCTYPE html>
+html(lang=global.lang)
+    head
+        +head(pageSettings)
+    body.page_two
+        header.header
+            span Header
+        main.main
+            section
+                .box
+                    .box__sidebar
+                        span Sidebar1
+                    .box__content
+                        span Content
+                    .box__sidebar
+                        span Sidebar2
+        footer.footer
+            span Footer

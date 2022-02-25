@@ -1,0 +1,39 @@
+.table{
+    width: 100%;
+    position: relative;
+    &__name{
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid rgb(184, 184, 184);
+        border-bottom: 0px;
+       
+         &:nth-child(even){
+            background: rgb(252, 227, 240);
+        }
+        &:nth-child(odd){
+            background: rgb(230, 230, 252);
+        }
+        &_main{
+
+            &:first-child{
+                background: rgb(230, 230, 230);
+            }
+        }
+
+    }
+    &__col{
+        width: 25%;
+        text-align: center;
+        padding: 10px;
+    }
+    
+}
+.table__mobile{
+    display: none;
+}

@@ -1,0 +1,49 @@
+.button{
+    &__list{
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    &__item{
+        width: 33.333%;
+        padding: 10px;
+        height: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(35, 151, 35);
+        color: white;
+        overflow: hidden;
+        & svg{
+            fill: white;
+            width: 16px;
+            height: 16px;
+        }
+        &:nth-child(2){
+            & svg{
+                width: 22px;
+                height: 22px;
+            }
+        }
+        &:nth-child(3){
+            & svg{
+                width: 22px;
+                height: 22px;
+            }
+        }
+    }
+    &__icon{
+        margin-right: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    &__name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
